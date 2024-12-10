@@ -13,6 +13,10 @@
     "moduleDetection": "force",
     "noEmit": true,
 
+    /* JSX 설정 */
+    "jsx": "react-jsx",
+    "jsxImportSource": "./src/jsx", // 사용자 정의 createElement 함수 경로
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
