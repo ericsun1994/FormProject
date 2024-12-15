@@ -1,8 +1,12 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 export default defineConfig({
-  esbuild: {
-    jsx: "automatic",
-    jsxImportSource: "./src/jsx", // Babel importSource와 동일하게
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
   },
 });
