@@ -13,12 +13,25 @@
     "moduleDetection": "force",
     "noEmit": true,
 
+    /* JSX 설정 */
+    "jsx": "react-jsx",
+    "jsxImportSource": "@/jsx", // 사용자 정의 createElement 함수 경로
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Base URL 및 Paths 설정 */
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+
+    /* Types 설정 */
+    "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["src", "src/jsx/jsx.d.ts"]
 }
